@@ -1,43 +1,46 @@
-<%- include('./partials/head') %> <!-- Dit is een include van de head.ejs file -->
-    <main>
-        <section id="request-services">
-            <h2>Diensten aanvragen</h2>
-            <!-- Formulier voor het aanvragen van diensten -->
-        </section>
-
-        <section id="offer-services">
-            <h2>Diensten aanbieden</h2>
-            <!-- Formulier voor het aanbieden van diensten -->
-        </section>
-
-
-    <!--meot hier een loop komen met de vraag en aanbod items-->
-
-    <ul>
-        <li>
-            <a href="/"><%= vraagaanbod.title %></a>
-            <p><%= vraagaanbod.short_description %></p>
-            <p>Meer informatie</p>
-        </li>
-    </ul>
-
-    <ul>
-        <li>
-            <a href="/"><%= vraagaanbod.title %></a>
-            <p><%= vraagaanbod.short_description %></p>
-            <p>Meer informatie</p>
-        </li>
-
-        <li>
-            <a href="/"><%= vraagaanbod.title %></a>
-            <p><%= vraagaanbod.short_description %></p>
-            <p>Meer informatie</p>
-
-        </main>          
-
-
-
-       
-<%- include('./partials/foot') %> <!-- Dit is een include van de foot.ejs file -->
-
-
+<%- include('./partials/head') %>
+<main>
+    <!-- Sectie voor het weergeven van "Vraag" items -->
+    <section class="vraag-section">
+        <h2>Vraag</h2>
+        <ul>
+            <!-- Filter en itereer door items van het type "vraag" -->
+            <% vraagaanbod.filter(item => item.type === 'vraag').forEach(function(item) { %>
+                    <% if (item.image) { %>
+                        <!-- Toon item afbeelding indien beschikbaar -->
+                        <img src="https://fdnd-agency.directus.app/assets/<%= item.image %>" alt="<%= item.title %>" width="300" height="150">
+                    <% } %>
+                    <div>
+                        <!-- Toon item titel met een link naar detailpagina -->
+                        <h3><a href="/detail/<%= item.id %>"><%= item.title %></a></h3>
+                        <!-- Toon item korte beschrijving -->
+                        <p><%= item.short_description %></p>
+                        <!-- Plaatsaanduiding voor het weergeven van meer informatie -->
+                        <p>Meer informatie</p>
+                    </div>
+            <% }) %>
+        </ul>
+    </section>
+    <!-- Sectie voor het weergeven van "Aanbod" items -->
+    <section class="aanbod-section">
+        <h2>Aanbod</h2>
+        <ul>
+            <!-- Filter en itereer door items van het type "aanbod" -->
+            <% vraagaanbod.filter(item => item.type === 'aanbod').forEach(function(item) { %>
+                    <% if (item.image) { %>
+                        <!-- Toon item afbeelding indien beschikbaar -->
+                        <img src="https://fdnd-agency.directus.app/assets/<%= item.image %>" alt="<%= item.title %>" width="300" height="150">
+                    <% } %>
+                    <div>
+                        <!-- Toon item titel met een link naar detailpagina -->
+                        <h3><a href="/detail/<%= item.id %>"><%= item.title %></a></h3>
+                        <!-- Toon item korte beschrijving -->
+                        <p><%= item.short_description %></p>
+                        <!-- Plaatsaanduiding voor het weergeven van meer informatie -->
+                        <p>Meer informatie</p>
+                    </div>
+            <% }) %>
+        </ul>
+    </section>
+</main>
+<%- include('./partials/foot') %>

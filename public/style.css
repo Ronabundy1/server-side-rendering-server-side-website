@@ -1,54 +1,100 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* Reset default browser styles */
+html {
+  box-sizing: border-box;
+  height: 100%;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center; /* Center the text horizontally */
-  display: flex; /* Set display to flex */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-}
+a{
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
   text-decoration: none;
+  color: #333;
 }
 
+/* Global styles */
+body {
+  font-family: 'PP Formula', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Header styles */
+header {
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Main content styles */
 main {
   padding: 20px;
 }
 
+.item {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+
 section {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-input[type="text"],
-button {
-  padding: 10px;
-  font-size: 16px;
+h2, h3 {
+  color: #333;
 }
 
+/* Footer styles */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #c58f1b;
+  color: white;
   text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
+  padding: 10px 0;
+  position: absolute;
   width: 100%;
+}
+
+/* Normal unvisited link */
+a:link {
+  color: blue;
+}
+
+/* Visited link */
+a:visited {
+  color: blue; /* or any other color you prefer for visited links */
+}
+
+/* Mouse over link */
+a:hover {
+  color: red;
+}
+
+/* Selected link */
+a:active {
+  color: green;
+}
+
+/* CSS to display sections side by side */
+main {
+  display: flex;
+}
+
+.vraag-section,
+.aanbod-section {
+  flex: 1;
+  margin-right: 20px; /* Optional spacing between sections */
 }
