@@ -1,30 +1,47 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
 
-## Inhoudsopgave
+# Amsterdam West Activiteiten en Diensten Platform
 
-  * [Beschrijving](#beschrijving)
-  * [Gebruik](#gebruik)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+---
 
-## Beschrijving
-<!-- In de Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+## Doelstelling
 
-## Gebruik
-<!--Bij Gebruik staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
+- Verbinding creëren binnen de Amsterdam West gemeenschap
+- Gemakkelijke toegang tot lokale activiteiten en diensten
+- Stimuleren van samenwerking en buurtinitiatieven
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+---
 
-## Installatie
-<!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
+## Eisen
+
+- Een overzichtelijke website
+- Zoekfunctionaliteit voor activiteiten en diensten
+- Mogelijkheid om zelf activiteiten te plaatsen
+- Aanmelden voor een gepersonaliseerde ervaring
+
+---
+
+## Gebruikerservaring
+
+- Eenvoudig te gebruiken interface
+- Aantrekkelijk en intuïtief ontwerp
+- Snelle toegang tot relevante informatie
+- Gepersonaliseerde aanbevelingen voor gebruikers
+
+---
+
+## Technische Kenmerken
+
+- Ontwikkeld met EJS (Embedded JavaScript)
+- Responsief ontwerp voor verschillende apparaten
+- Gebruik van een database voor opslag van activiteiten en gebruikersinformatie
+- Css
+
+
+## Zie een voorproefje
+
+Bezoek omijn website op https://tame-pink-duck-cap.cyclic.app
 
 
 ## Bronnen
