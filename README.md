@@ -25,9 +25,8 @@
 ## Gebruikerservaring
 
 - Eenvoudig te gebruiken interface
-- Aantrekkelijk en intuïtief ontwerp
+- Aantrekkelijk en duidekuhj ontwerp
 - Snelle toegang tot relevante informatie
-- Gepersonaliseerde aanbevelingen voor gebruikers
 
 ---
 
